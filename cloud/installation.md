@@ -137,7 +137,7 @@ argocd completion zsh > "${fpath[1]}/_argocd"
 
 Install Docker to be able to run k3d!
 
-See docker-install-ubuntu.sh for installation. (or read [this article](https://rdr-it.io/ubuntu-24-04-installation-de-docker-et-docker-compose/), or this [official one](https://docs.docker.com/engine/install/ubuntu/))
+See [docker-install-ubuntu.sh](../docker-install-ubuntu.sh) for installation. (or read [this article](https://rdr-it.io/ubuntu-24-04-installation-de-docker-et-docker-compose/), or this [official one](https://docs.docker.com/engine/install/ubuntu/))
 
 After installation (see [official instructions](https://docs.docker.com/engine/install/linux-postinstall/)) :
 
