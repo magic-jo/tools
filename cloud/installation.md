@@ -151,6 +151,38 @@ Log out then log back for changes to take effect
 For Ubuntu 18.04, follow [this tutorial](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-18-04).
 </details>
 
+<details>
+<summary>Terraform
+</summary>
+
+```sh
+sudo apt-get update && sudo apt-get install -y gnupg software-properties-common
+wget -O- https://apt.releases.hashicorp.com/gpg | \\ngpg --dearmor | \\nsudo tee /usr/share/keyrings/hashicorp-archive-keyring.gpg > /dev/null\n
+echo "deb [signed-by=/usr/share/keyrings/hashicorp-archive-keyring.gpg] \\nhttps://apt.releases.hashicorp.com $(lsb_release -cs) main" | \\nsudo tee /etc/apt/sources.list.d/hashicorp.list\n
+sudo apt update
+sudo apt-get install terraform
+terraform -install-autocomplete
+```
+
+</details>
+
+<details>
+<summary>Terragrunt
+</summary>
+
+Télécharger le package Terragrunt sur la page [Releases](https://github.com/gruntwork-io/terragrunt/releases)
+
+```sh
+# Ubuntu
+cd Téléchargements
+mv terragrunt_linux_amd64 terragrunt
+chmod u+x terragrunt
+sudo mv terragrunt /usr/local/bin/
+terragrunt --install-autocomplete
+```
+
+</details>
+
 ---
 
 <details>
